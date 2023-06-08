@@ -1,0 +1,77 @@
+:root {
+    --clr-bg: #fafaf9;
+    --clr-lightbase: #78716c;
+    --clr-btn: #78716c;
+    --clr-base: #44403c;
+    --clr-amber200: #fde68a;
+    --clr-yellow100: #fef9c3;
+    --clr-lime600: #65a30d;
+    --clr-rose: #fca5a5;
+    --clr-rose100: #ffe4e6;
+    --clr-lily: rgba(118, 255, 100, 0.623);
+
+    /*amber200: rgb(254, 243, 199)*/
+
+    /* sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.dark-mode {
+    --clr-bg: #3f3f46;
+    --clr-lightbase: #fef9c3;
+    --clr-stone600: #fde68a;
+    --clr-base: white;
+    --clr-amber200: #fde68a;
+    --clr-yellow100: #fef9c3;
+    --clr-lime600: #65a30d;
+    --clr-rose100: #ffe4e6;
+    --clr-lily: rgba(254, 205, 211, 0.623);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--clr-bg);
+    color: var(--clr-base);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}

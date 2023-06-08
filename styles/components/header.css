@@ -1,0 +1,123 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    padding-right: 0.75rem;
+    position: relative;
+    z-index: 9999;
+}
+
+.header__menu {
+    display: none;
+}
+
+.header__bar {
+    color: var(--clr-base);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    display: block;
+}
+
+/* xs */
+/* @media (min-width: 475px) {
+
+} */
+
+/* sm */
+@media (min-width: 640px) {
+    .header__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        gap: 2em;
+    }
+    
+    .header__link {
+        font-size: var(--size-sm);
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--clr-base);
+        transition: color 0.3s;
+    }
+    
+    .header__link:hover {
+        color: var(--clr-lime600);
+    }
+    
+    .header__line {
+        border: 1px solid var(--clr-lightbase);
+        padding-top: 1.5em;
+    }
+    
+    .header__sun {
+        display: block;
+        color: var(--clr-base);
+        width: var(--size-lg);
+        height: var(--size-lg);
+    }
+
+    .header__sun:hover{
+        color: var(--clr-lime600);
+    }
+    
+    .header__resume {
+        font-size: var(--size-sm);
+    }
+
+    .header__bar {
+        display: none;
+    }
+}
+
+/* md */
+/* @media (min-width: 768px) {
+
+} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .header {
+        padding-bottom: 3.5rem;
+    }
+
+    .header__link {
+        font-size: var(--size-base);
+    }
+    
+    .header__sun {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+    
+    .header__resume {
+        font-size: var(--size-base);
+    }
+
+}
+
+/* xl */
+/* @media (min-width: 1280px) {
+
+} */
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .header {
+        padding-bottom: 4.5rem;
+    }
+    .header__link {
+        font-size: var(--size-lg);
+    }
+    
+    .header__sun {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+    
+    .header__resume {
+        font-size: var(--size-lg);
+    }
+}
